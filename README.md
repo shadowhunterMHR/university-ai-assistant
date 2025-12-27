@@ -174,6 +174,8 @@ python -m spacy download en_core_web_sm
 
 ## ⚙️ Configuration
 
+### University Configuration
+
 All environment-specific settings are located in **`config.py`**.
 
 **Example:**
@@ -186,6 +188,26 @@ OUTPUT_FILE = "data/scraped_data.csv"
 ### ➡ To switch to another university, only update `BASE_URL`.
 
 **No other code changes are required.**
+
+### Hugging Face API Setup
+
+The system uses Hugging Face for LLM integration. Follow these steps:
+
+1. Create a free account at [Hugging Face](https://huggingface.co/)
+2. Generate an API Token from your account settings
+3. Set the token as an environment variable:
+
+**Windows (PowerShell):**
+```powershell
+$env:HUGGINGFACE_API_TOKEN="hf_YourTokenHere"
+```
+
+**Linux / macOS:**
+```bash
+export HUGGINGFACE_API_TOKEN="hf_YourTokenHere"
+```
+
+This allows the system to securely access the Hugging Face API without hardcoding credentials.
 
 ---
 
