@@ -319,4 +319,3 @@ This project is intended for **academic and educational use only**.
 
 ---
 
-**Made with ❤️ for advancing AI in Education**
